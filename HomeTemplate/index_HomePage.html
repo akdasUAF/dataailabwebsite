@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>UAF Data/AI Lab Home Page</title>
+  <link rel="stylesheet" href="./style_HomePage.css">
+  <link rel="stylesheet" href="../PublicFiles/style_HeaderFooter.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"> <!-- to use font-awesome icons -->
+  <script src="../PublicFiles/script_PublicFiles.js"></script>
+</head>
+<body>
+  <!-- HEADER-->
+  <iframe width="100%" height="80px" frameborder="0" style="position:sticky; top:0; left:0; z-index:5000" src="../PublicFiles/index_Header.html"></iframe>
+  <!--END OF HEADER-->
+
+  <!--Promo-->
+  <!--<iframe width="100%" height="120px" frameborder="0" style="position:absolute; bottom:1%; left:0; z-index:3000" src="../PublicFiles/index_PromoHorizontalScroll.html"></iframe>-->
+  <!--END OF PROMO-->
+
+  <!--MAIN CONTAINER-->
+  <div style="transition:all 2s">
+    <button class="w3-button w3-black w3-display-left" style="z-index:100000" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" style="z-index:100000" onclick="plusDivs(1)">&#10095;</button>
+
+    <div id="divSlide" class="showcase" style="background: url('./images_HomePage/backgroundDatascience.jpeg') no-repeat center center/cover">
+      <div class="showcase-top">
+        <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
+        <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
+      </div>
+      <div class="showcase-content">
+        <h1> Welcome to UAF Data/AI Lab </h1>
+        <p>Empowering Innovation in the Last Frontier</p>
+        <a href="../FormsTemplate/index_WorkshopRegistrationPage.html" class="btn btn-xl"> Explore our projects <i class="fas fa-chevron-right btn-icon"></i></a>
+      </div>
+      <!--<iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="./PublicFiles/index_Upcoming.html"></iframe>-->
+    </div>
+
+    <div id="divSlide" class="showcase" style="background: url('./images_HomePage/backgroundProgramming.jpeg') no-repeat center center/cover">
+      <div class="showcase-top">
+        <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
+        <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
+      </div>
+      <div class="showcase-content">
+        <h1> Aspiring student researcher? </h1>
+        <p> Explore the opportunities </p>
+        <a href="../F2FListTemplate/index_F2FListPage.html" class="btn btn-xl"> Register for a sttudent position <i class="fas fa-chevron-right btn-icon"></i></a>
+      </div>
+      <!-- <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="./PublicFiles/index_Upcoming.html"></iframe>-->
+    </div>
+
+    <div id="divSlide" class="showcase" style="background: url('./images_HomePage/backgroundValuePrice.jpeg') no-repeat center center/cover">
+      <div class="showcase-top">
+        <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
+        <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
+      </div>
+      <div class="showcase-content">
+        <h1> Faculty or staff scientist? </h1>
+        <p>Explore your big data with us</p>
+        <a href="./CourseListTemplate/index_CourseListPage.html" class="btn btn-xl"> Register for collaboration <i class="fas fa-chevron-right btn-icon"></i></a>
+      </div>
+      <!-- <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="./PublicFiles/index_Upcoming.html"></iframe> -->
+    </div>
+
+    <div id="divSlide" class="showcase" style="background: url('./images_HomePage/backgroundTutoring.jpeg') no-repeat center center/cover">
+      <div class="showcase-top">
+        <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
+        <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
+      </div>
+      <div class="showcase-content">
+        <h1> We are looking for industry partner </h1>
+        <p>Work with our talented students</p>
+        <a href="./FormsTemplate/index_ConsultancyAppointment.html" class="btn btn-xl"> Tell us more about the opportunity <i class="fas fa-chevron-right btn-icon"></i></a>
+      </div>
+      <!-- <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="./PublicFiles/index_Upcoming.html"></iframe> -->
+    </div>
+  </div>
+
+
+  <section class="tabs">
+    <div class="container">
+      <div id="tab-1" class="tab-item tab-border">
+        <i class="fas fa-dollar-sign fa-3x"></i>
+        <p class="hide-sm"> Our Major Sponsor </p>
+      </div>
+      <div id="tab-2" class="tab-item">
+        <i class="fas fa-money-check-alt fa-3x"></i>
+        <p class="hide-sm"> Other Sponsors</p>
+      </div>
+      <div id="tab-3" class="tab-item">
+        <i class="fas fa-server fa-3x"></i>
+        <p class="hide-sm"> Our GPU-HPC </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tab-content">
+    <div class="container">
+      <!-- Tab Content 1 -->
+      <div id="tab-1-content" class="tab-content-item show">
+        <div class="tab-1-content-inner">
+          <div>
+            <p class="text-lg"> Our lab is established with the support from by NIH AIM AHEAD Program for Artificial Intelligence Readiness.</p>
+            <a href="https://www.aim-ahead.net/" class="btn btn-lg" target="_blank"> Know more about AIM AHEAD </a>
+          </div>
+          <!--<img src="https://i.ibb.co/J2xDJV7/tab-content-1.png" alt="" />-->
+          <img src="./images_HomePage/Logo_AIM_Ahead.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Tab Content 2 -->
+      <div id="tab-2-content" class="tab-content-item">
+        <div class="tab-2-content-top">
+          <p class="text-lg">We made data education available, affordable, accesible to anyone, anytime, anywhere.</p>
+            <a href="../CourseListTemplate/index_CourseListPage.html" class="btn btn-lg"> Explore our funded research  </a>
+        </div>
+        <div class="tab-2-content-bottom">
+          <div>
+            <img src="./images_HomePage/Logo_NSF.png" width="200px" height="200px" alt="" />
+            <p class="text-md">National Science Foundation</p>
+            <p class="text-dark">NSF MRI and EPSCoR RII Track4 grant.</p>
+          </div>
+          <div>
+            <img src="./images_HomePage/Logo_DOE.png" width="200px" height="200px" alt="" />
+            <p class="text-md">Department of Energy</p>
+            <p class="text-dark">DOE RENEW grant</p>
+          </div>
+          <div>
+            <img src="./images_HomePage/Logo_NASA.png" width="200px" height="200px" alt="" />
+            <p class="text-md">National Aeronautics and Space Administration</p>
+            <p class="text-dark">NASA Alaska EPSCoR RID grant.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 3 -->
+      <div id="tab-3-content" class="tab-content-item">
+        <div class="text-center">
+          <p class="text-lg">6 nodes with total 48 GPUs </p>
+          <a href="https://uaf-rcs.gitbook.io/uaf-rcs-hpc-docs/request-an-account" class="btn btn-lg" target="_blank"> Request an account to access the GPUs </a>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Resource</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nvidia H100 node</td>
+              <td>1 node with 8GPUs</td>
+            </tr>
+            <tr>
+              <td>Nvidia L40 node</td>
+              <td> 5 nodes each with 8GPUs </td>
+            </tr>
+            <tr>
+              <td>CPU </td>
+              <td>Each node has AMD EPyC 24 cores</td>
+            </tr>
+            <tr>
+              <td>RAM</td>
+              <td>Each node has 1.5TB</td>
+            </tr>
+            <tr>
+              <td>Directly attched storage</td>
+              <td>Each node has 28TB NVMe SSD</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-center">
+          <a href="https://uaf-rcs.gitbook.io/uaf-rcs-hpc-docs/getting-started/introduction" class="btn btn-lg" traget="_blank"> Explore more about our HPC services </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END OF MAIN CONTAINER -->
+
+  <!--FOOTER -->
+  <iframe width="100%" height="300px" frameborder="0" src="../PublicFiles/index_Footer.html"></iframe>
+  <!--END OF Footer-->
+
+</body>
+<script  src="./script_HomePage.js"></script>
+
+</html>

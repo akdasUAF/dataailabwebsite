@@ -1,35 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="./style_HeaderFooter.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"> <!-- to use font-awesome icons -->
+  <title>UAF Header Test</title>
+  <link rel="stylesheet" href="./style_HeaderFooter.css"> 
 </head>
+<body>
 
 <!-- HEADER -->
-<header>
-  <div class="netflixLogo">
-    <a id="logo" href="../HomeTemplate/index_HomePage.html" target="_parent"><img src="./images_PublicFiles/LogoUAFYellow.png" alt="Logo Image" height="100" width="200"></a>
+<header class="site-header">
+
+ <!-- Left: Logo -->
+  <div class="logo-container">
+    <a id="logo" href="../HomeTemplate/index_HomePage.html" target="_parent">
+      <img src="./images_PublicFiles/LogoUAFBlueWhite.png" alt="UAF Logo" class="logo-img">
+      <img src="./images_PublicFiles/LogoUAFText.png" alt="UAF Text Logo" class="logo-text">
+    </a>
   </div>
 
-  <nav class="main-nav">
+  <!-- Right：Menu + Button -->
+  <div class="menu-button-container">
 
-  </nav>
+    <!-- Menu Bar -->
+    <nav class="nav-links">
+      <a href="../HomeTemplate/index_HomePage.html" target="_parent">Home</a>
+      <a href="../CompanyInfoTemplate/index_AboutUsPage.html" target="_parent">About</a>
+      <a href="../TeamMembersTemplate/index_TeamMembersPage.html" target="_parent">Team</a>
+      <a href="../CollaboratorsTemplate/index_CollaboratorsPage.html" target="_parent">Collaborators</a>
+      <a href="../CourseListTemplate/index_CourseListPage.html" target="_parent">Courses</a>
+      <a href="../FormsTemplate/index_AllFormLinks.html" target="_parent">Forms</a>
+      <a href="../CompanyInfoTemplate/index_ContactUsPage.html" target="_parent">Contact</a>
+    </nav>
 
-  <nav class="sub-nav">
-    <a href="../HomeTemplate/index_HomePage.html" target="_parent">Home</a>
-    <a href="../CompanyInfoTemplate/index_AboutUsPage.html" target="_parent">About</a>
-    <a href="../ProjectsTemplate/index_ProjectsPage.html" target="_parent">Projects</a>
-    <a href="../TeamMembersTemplate/index_TeamMembersPage.html" target="_parent">Team</a>
-    <a href="../CollaboratorsTemplate/index_CollaboratorsPage.html" target="_parent">Collaborators</a>
-    <a href="../CourseListTemplate/index_CourseListPage.html" target="_parent">Courses/Webinars</a>
-    <!--<a href="../F2FListTemplate/index_F2FListPage.html" target="_parent">Live/F2F</a>-->
-    <a href="../FormsTemplate/index_AllFormLinks.html" target="_parent">Forms</a>
-    <a href="../CompanyInfoTemplate/index_ContactUsPage.html" target="_parent">Contact</a>
+    <!-- button -->
+    <a href="../FormsTemplate/index_WorkshopRegistrationPage.html" target="_parent" class="cta-button">
+      Work with us
+    </a>
 
-    <a class="btn" href="https://forms.gle/iCftw6yvwjKbRrbn7" target="_blank">Work with us</a>
-    <!-- Search and Sign-in facilities should be added here-->
-    <!--<a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
-    <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
-    <a href="#">Account</a>-->
-  </nav>
+  </div>
+
 </header>
+
+<!-- Gradient Bar -->
+ <div class="gradient-bar"></div>
+
+</body>
+</html>
 <!-- END OF HEADER -->

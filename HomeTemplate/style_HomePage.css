@@ -1,7 +1,7 @@
 /* Global Styles */
 :root {
-    --primary-color: #e50914;
-    --dark-color: #141414;
+    --primary-color: #e6b800;
+    --dark-color: #205B8C;
     --light-color: #f4f4f4;
 }
 
@@ -153,7 +153,7 @@ img {
 /* Tab Content */
 .tab-content {
     padding: 3rem 0;
-    background: #000;
+    background: #ffffff;
     color: #fff;
 }
 
@@ -263,7 +263,7 @@ img {
 .btn {
     display: inline-block;
     background: var(--primary-color);
-    color: #fff;
+    color: black;
     padding: 0.4rem 1.3rem;
     font-size: 1rem;
     text-align: center;
@@ -352,7 +352,7 @@ img {
 
 @media (max-width: 700px) {
     .showcase::after {
-        background: rgba(0, 0, 0, 0.6);
+        background:#000000(0, 0, 0, 0.6);
         box-shadow: inset 80px 80px 150px #000000, inset -80px -80px 150px #000000;
     }
 

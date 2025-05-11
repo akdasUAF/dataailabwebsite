@@ -1,81 +1,94 @@
 :root {
-    --uaf-blue: #00205B;
-    --uaf-gold: #FFD100;
-    --card-bg: #ffffff;
-    --text-color: #333;
-    --subtle-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom, #f7f9fb 0%, #dfeaf5 100%);
-    margin: 0;
-    padding: 0;
-    color: var(--text-color);
-  }
-  
-  .collab-section {
-    padding: 3rem 2rem;
-    max-width: 1200px;
-    margin: auto;
-  }
-  
-  .collab-section h2 {
-    text-align: center;
-    color: var(--uaf-blue);
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    font-weight: bold;
-  }
-  
-  .collab-card {
-    background-color: var(--card-bg);
-    border-left: 6px solid var(--uaf-blue);
-    border-radius: 8px;
-    box-shadow: var(--subtle-shadow);
-    padding: 2rem;
-    margin: 2rem auto;
-    max-width: 800px;
-    text-align: center;
-    transition: transform 0.2s ease;
-  }
-  
-  .collab-card:hover {
-    transform: scale(1.01);
-  }
-  
-  .collab-card img {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-    border: 3px solid var(--uaf-blue);
-  }
-  
-  .collab-card h3 {
-    font-size: 1.25rem;
-    color: var(--uaf-blue);
-    margin-bottom: 0.5rem;
-  }
-  
-  .collab-card p {
-    color: var(--text-color);
-    margin-bottom: 0.5rem;
-  }
-  
-  .collab-card a {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: white;
-    background-color: var(--uaf-blue);
-    padding: 0.4rem 1rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .collab-card a:hover {
-    background-color: #001740;
-  }
-  
+  --uaf-blue: #00205B;
+  --uaf-gold: #FFD100;
+  --card-bg: #ffffff;
+  --text-color: #333;
+  --subtle-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #f7f9fb 0%, #dfeaf5 100%);
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+/* ===== Collaborators Section ===== */
+.collab-section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.collab-section h2 {
+  text-align: center;
+  color: var(--uaf-blue);
+  font-size: 2.2rem; 
+  margin-bottom: 2.5rem; 
+  font-weight: 900; 
+  font-family: 'Arial Black', 'Roboto', sans-serif; 
+}
+
+/* ===== Collaborator Card ===== */
+.collab-card {
+  background-color: var(--card-bg);
+  border-left: 6px solid var(--uaf-blue);
+  border-radius: 8px;
+  box-shadow: var(--subtle-shadow);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.collab-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.collab-card img {
+  width: 120px; 
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1.5rem; 
+  border: 3px solid var(--uaf-blue);
+}
+
+
+.collab-card h3 {
+  font-size: 1.5rem; 
+  color: var(--uaf-blue);
+  margin-bottom: 0.8rem;
+  font-weight: bold;
+}
+
+
+.collab-card p {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  line-height: 1.6; 
+}
+
+
+.collab-card a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: white;
+  background-color: var(--uaf-blue);
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+
+.collab-card a:hover {
+  background-color: #001740;
+}

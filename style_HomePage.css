@@ -395,3 +395,7 @@ img {
     margin-top: 3rem;
 }
 }
+
+.no-transition {
+    transition: none !important;
+  }

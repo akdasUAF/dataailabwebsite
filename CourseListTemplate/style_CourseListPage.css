@@ -1,8 +1,9 @@
-/* CSS VARIABLES */
+/* UAF THEME COLORS */
 :root {
-  --primary: #141414;
-  --light: #F3F3F3;
-  --dark:     #686868;
+  --uaf-blue: #00205B;
+  --uaf-gold: #FFD100;
+  --text-dark: #333;
+  --bg-light: #f7f9fb;
 }
 
 html, body {
@@ -10,243 +11,158 @@ html, body {
   min-height: 100vh;
   margin: 0;
   padding: 0;
-  background-color: var(--primary);
-  color: var(--light);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: 'Roboto', Arial, sans-serif;
   box-sizing: border-box;
-  line-height: 1.4;
+  line-height: 1.6;
 }
 
 img {
   max-width: 100%;
-  border:4px solid white;
+  border: 4px solid white;
+  border-radius: 6px;
 }
 
 h1 {
   padding-top: 60px;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--uaf-blue);
 }
 
 .wrapper {
   margin: 0;
   padding: 0;
 }
-/*Buttons*/
-/* Buttons */
+
+/* BUTTONS */
 .btn {
-    display: inline-block;
-    background: #e50914;
-    color: #fff;
-    padding: 0.4rem 1.3rem;
-    font-size: 1rem;
-    text-align: center;
-    border: none;
-    cursor: pointer;
-    margin-right: 0.5rem;
-    transition: opacity 0.2s ease-in;
-    outline: none;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-    border-radius: 2px;
+  display: inline-block;
+  background: var(--uaf-gold);
+  color: black;
+  padding: 0.4rem 1.3rem;
+  font-size: 1rem;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: opacity 0.2s ease-in;
+  outline: none;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+  border-radius: 5px;
+  font-weight: bold;
 }
 
 .btn:hover {
-    opacity: 0.9;
-}
-
-.btn-rounded {
-    border-radius: 5px;
+  opacity: 0.9;
 }
 
 .btn-xl {
-    font-size: 2rem;
-    padding: 1.5rem 2.1rem;
-    text-transform: uppercase;
+  font-size: 2rem;
+  padding: 1.5rem 2.1rem;
+  text-transform: uppercase;
 }
 
 .btn-lg {
-    font-size: 1rem;
-    padding: 0.8rem 1.3rem;
-    text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.8rem 1.3rem;
+  text-transform: uppercase;
 }
 
 .btn-icon {
-    margin-left: 1rem;
+  margin-left: 1rem;
 }
 
-/* MAIN CONTIANER */
+/* MAIN CONTAINER */
 .main-container {
   padding: 50px;
 }
 
 .box {
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(6, minmax(100px, 1fr));
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .box a {
-  transition: transform .3s;
+  transition: transform 0.3s;
 }
 
 .box a:hover {
-  transition: transform .3s;
-  -ms-transform: scale(1.4);
-  -webkit-transform: scale(1.4);
-  transform: scale(1.4);
+  transform: scale(1.04);
 }
 
 .box img {
-  border-radius: 2px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* LINKS */
 .link {
   padding: 50px;
+  text-align: center;
 }
 
 .sub-links ul {
   list-style: none;
   padding: 0;
   display: grid;
-  grid-gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  text-align: center;
 }
 
 .sub-links a {
-  color: var(--dark);
+  color: var(--uaf-blue);
   text-decoration: none;
+  font-weight: bold;
 }
 
 .sub-links a:hover {
-  color: var(--dark);
   text-decoration: underline;
 }
 
-.logos a{
+.logos a {
   padding: 10px;
 }
 
 .logo {
-  color: var(--dark);
+  color: var(--uaf-blue);
 }
 
-
-/* MEDIA QUERIES */
-
-@media(max-width: 900px) {
-
-  header {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "nt nt nt  .  .  . sb . . . "
-    "mn mn mn mn mn mn  mn mn mn mn";
-  }
-
+/* RESPONSIVE */
+@media (max-width: 900px) {
   .box {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
   }
-
 }
 
-@media(max-width: 700px) {
-
-  header {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-    "nt nt nt  .  .  . sb . . . "
-    "mn mn mn mn mn mn  mn mn mn mn";
-  }
-
+@media (max-width: 700px) {
   .box {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(3, minmax(100px, 1fr));
-  }
-
-  .sub-links ul {
-    display: grid;
-    grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
   }
-
+  .sub-links ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
-@media(max-width: 500px) {
-
+@media (max-width: 500px) {
   .wrapper {
     font-size: 15px;
   }
-
-  header {
-    margin: 0;
-    padding: 20px 0 0 0;
-    position: static;
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas:
-    "nt"
-    "mn"
-    "sb";
-    text-align: center;
-  }
-
-  .netflixLogo {
-    max-width: 100%;
-    margin: auto;
-    padding-right: 20px;
-  }
-
-  .main-nav {
-    display: grid;
-    grid-gap: 0px;
-    grid-template-columns: repeat(1, 1fr);
-    text-align: center;
-  }
-
   h1 {
-    text-align: center;
     font-size: 18px;
   }
-
-
-
   .box {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     text-align: center;
   }
-
-  .box a:hover {
-    transition: transform .3s;
-    -ms-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1.2);
-  }
-
   .logos {
-    display: grid;
-    grid-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
-    text-align: center;
   }
-
   .sub-links ul {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: repeat(1, 1fr);
-    text-align: center;
+    grid-template-columns: 1fr;
     font-size: 15px;
   }
-
-
-
-
-
 }

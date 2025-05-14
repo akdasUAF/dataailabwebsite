@@ -1,44 +1,58 @@
-let currentIndex = 0;
-const track = document.getElementById("banner-track");
-const slides = document.querySelectorAll(".banner-slide");
-const totalSlides = slides.length;
+const tabItems = document.querySelectorAll('.tab-item');
+const tabContentItems = document.querySelectorAll('.tab-content-item');
 
-function updateSlidePosition(animate = true) {
-  if (!animate) {
-    track.classList.add("no-transition");
-  } else {
-    track.classList.remove("no-transition");
-  }
-  track.style.transform = `translateX(-${currentIndex * 100}%)`;
+// Select tab content item
+function selectItem(e) {
+    // Remove all show and border classes
+    removeBorder();
+    removeShow();
+    // Add border to current tab item
+    this.classList.add('tab-border');
+    // Grab content item from DOM
+    const tabContentItem = document.querySelector(`#${this.id}-content`);
+    // Add show class
+    tabContentItem.classList.add('show');
 }
 
-window.nextSlide = function () {
-  if (currentIndex < totalSlides - 1) {
-    currentIndex++;
-    updateSlidePosition();
-  } else {
-    currentIndex++;
-    updateSlidePosition();
-    setTimeout(() => {
-      currentIndex = 0;
-      updateSlidePosition(false);
-    }, 400);
-  }
-};
+// Remove bottom borders from all tab items
+function removeBorder() {
+    tabItems.forEach(item => {
+        item.classList.remove('tab-border');
+    });
+}
 
-window.prevSlide = function () {
-  if (currentIndex > 0) {
-    currentIndex--;
-    updateSlidePosition();
-  } else {
-    currentIndex = totalSlides - 1;
-    updateSlidePosition(false);
-    setTimeout(() => {
-      updateSlidePosition(true);
-    }, 40);
-  }
-};
+// Remove show class from all content items
+function removeShow() {
+    tabContentItems.forEach(item => {
+        item.classList.remove('show');
+    });
+}
 
-setInterval(() => {
-  nextSlide();
+// Listen for tab item click
+tabItems.forEach(item => {
+    item.addEventListener('click', selectItem);
+});
+
+//Slide show code
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  document.getElementById("divSlide").style.transition = "all 2s";
+  var i;
+  var x = document.getElementsByClassName("showcase");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+// an automated slide show (4seconds per slide) along with the button-click slide show 
+setInterval(function() {
+  plusDivs(1);
 }, 4000);

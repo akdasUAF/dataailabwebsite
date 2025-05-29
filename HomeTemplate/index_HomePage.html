@@ -5,14 +5,15 @@
   <meta charset="UTF-8">
   <title>UAF Data/AI Lab Home Page</title>
   <link rel="stylesheet" href="./style_HomePage.css">
-  <link rel="stylesheet" href="./PublicFiles/style_HeaderFooter.css">
+  <link rel="stylesheet" href="../PublicFiles/style_HeaderFooter.css">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"> <!-- to use font-awesome icons -->
-  <script src="./PublicFiles/script_PublicFiles.js"></script>
+  <script src="../PublicFiles/script_PublicFiles.js"></script>
 </head>
 <body>
   <!-- HEADER-->
-  <iframe width="100%" height="80px" frameborder="0" style="position:sticky; top:0; left:0; z-index:5000" src="../PublicFiles/index_Header.html"></iframe>
+  <iframe src="../PublicFiles/index_Header.html"style="border: none; width: 100%; height: 100px;"scrolling="no"></iframe>
+
   <!--END OF HEADER-->
 
   <!--Promo-->
@@ -24,7 +25,9 @@
     <button class="w3-button w3-black w3-display-left" style="z-index:100000" onclick="plusDivs(-1)">&#10094;</button>
     <button class="w3-button w3-black w3-display-right" style="z-index:100000" onclick="plusDivs(1)">&#10095;</button>
 
-    <div id="divSlide" class="showcase" style="background: url('./images_HomePage/backgroundDatascience.jpeg') no-repeat center center/cover">
+    <div id="divSlide" class="showcase" style="background: url('/images_HomePage/backgroundAurora.jpeg') no-repeat center center/contain; height: 1000px;">
+
+
       <div class="showcase-top">
         <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
         <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
@@ -32,7 +35,7 @@
       <div class="showcase-content">
         <h1> Welcome to UAF Data/AI Lab </h1>
         <p>Empowering Innovation in the Last Frontier</p>
-        <a href="../ProjectsTemplate/index_ProjectsPage.html" class="btn btn-xl"> Explore our projects <i class="fas fa-chevron-right btn-icon"></i></a>
+        <a href="../ProjectsTemplate/index_ProjectsPage.html" target="_blank"  class="btn btn-xl"> Explore our projects <i class="fas fa-chevron-right btn-icon"></i></a>
       </div>
       <!--<iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="./PublicFiles/index_Upcoming.html"></iframe>-->
     </div>
@@ -44,8 +47,8 @@
       </div>
       <div class="showcase-content">
         <h1> Undergraduate researcher? </h1>
-        <p> Interested in developing AI-Powered solutions for forest fire?</p>
-        <a href="https://forms.gle/As8ZMRvJ5bvJBrLZ6" class="btn btn-xl" target="_blank"> Apply for our paid research training  <i class="fas fa-chevron-right btn-icon"></i></a>
+        <p> Interested in developing AI-powered solutions for forest fire? </p>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdUfFUw-CbPc8h3bSQS5FCI2GkHSey1iSVlNS9G2LEtkrmR4w/viewform" target="_blank"  class="btn btn-xl"> Apply for our paid research training <i class="fas fa-chevron-right btn-icon"></i></a>
       </div>
       <!-- <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="./PublicFiles/index_Upcoming.html"></iframe>-->
     </div>
@@ -58,7 +61,7 @@
       <div class="showcase-content">
         <h1> Data Science Dummy? </h1>
         <p> We work to make data education accesible to all </p>
-        <a href="../CourseListTemplate/index_CourseListPage.html" class="btn btn-xl"> Explore our 'Data Science for All' workshop/webinar <i class="fas fa-chevron-right btn-icon"></i></a>
+        <a href="../CourseListTemplate/index_CourseListPage.html" target="_blank"  class="btn btn-xl"> Explore our 'Data Science for All' workshop/webinar <i class="fas fa-chevron-right btn-icon"></i></a>
       </div>
       <!-- <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="./PublicFiles/index_Upcoming.html"></iframe> -->
     </div>
@@ -71,7 +74,7 @@
       <div class="showcase-content">
         <h1> Graduate student? </h1>
         <p> Want to research with us? </p>
-	<a href="https://forms.gle/gkZ4XrWTLfpvsLQVA" class="btn btn-xl" target="_blank"> Fill up this application form <i class="fas fa-chevron-right btn-icon"></i></a> <!-- Editable form: https://docs.google.com/forms/d/17Ls5JU6W-yFe761SFTCuODEngoZjuXP5KsipQcT_bF8/edit  -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSf9JlAMoHfyNOGGh06v48RMYH72taQn8vQVHFDon5EkALqLSA/viewform" target="_blank"  class="btn btn-xl"> Fill up this application form <i class="fas fa-chevron-right btn-icon"></i></a>
       </div>
       <!-- <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="./PublicFiles/index_Upcoming.html"></iframe> -->
     </div>
@@ -113,7 +116,7 @@
       <div id="tab-2-content" class="tab-content-item">
         <div class="tab-2-content-top">
           <p class="text-lg">Supported by multiple federal agencies. Enabling students and faculty from multiple disciplines.</p>
-	  <a href="../ProjectsTemplate/index_ProjectsPage.html" class="btn btn-lg"> Explore our funded projects  </a>
+	  <a href="../ProjectsTemplate/index_ProjectsPage.html" class="btn btn-lg" target="_blank"> Explore our funded projects  </a>
         </div>
         <div class="tab-2-content-bottom">
           <div>

@@ -52,3 +52,7 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
+// an automated slide show (4seconds per slide) along with the button-click slide show 
+setInterval(function() {
+  plusDivs(1);
+}, 4000);
